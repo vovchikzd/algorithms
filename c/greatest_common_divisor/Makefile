@@ -1,4 +1,4 @@
-result: main.c
+result: main.c Makefile
 	clang -Wall -Wextra -Wpedantic -std=c17 -o result main.c
 
 fmt:

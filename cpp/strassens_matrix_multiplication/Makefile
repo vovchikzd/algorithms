@@ -1,4 +1,4 @@
-result: main.cpp
+result: main.cpp Makefile
 	clang++ -Wall -Wextra -Wpedantic -std=c++20 -o result main.cpp
 
 fmt:
