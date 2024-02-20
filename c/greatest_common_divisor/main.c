@@ -1,26 +1,26 @@
 #include <stdio.h>
 
-int mabs(int x) { return x < 0 ? -x : x; }
+unsigned long long mabs(unsigned long long x) { return x < 0 ? -x : x; }
 
-int mod(int x, int y) {
-  int res;
+unsigned long long mod(unsigned long long x, unsigned long long y) {
+  unsigned long long res;
   res = x % y;
   if (res < 0) { res += mabs(y); }
   return res;
 }
 
-int gcd(int x, int y) {
+unsigned long long gcd(unsigned long long x, unsigned long long y) {
   while (y != 0) {
-    int new = mod(x, y);
+    unsigned long long new = mod(x, y);
     x = y; y = new;
   }
   return x;
 }
 
 int main(void) {
-  int first, second;
-  scanf("%d%d", &first, &second);
-  int res = gcd(first, second);
-  printf("%d\n", res);
+  unsigned long long first, second;
+  scanf("%llu%llu", &first, &second);
+  unsigned long long res = gcd(first, second);
+  printf("%llu\n", res);
   return 0;
 }
