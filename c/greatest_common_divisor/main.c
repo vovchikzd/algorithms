@@ -10,9 +10,11 @@ int mod(int x, int y) {
 }
 
 int gcd(int x, int y) {
-  int new = mod(x, y);
-  if (new == 0) { return y; }
-  return gcd(y, new);
+  while (y != 0) {
+    int new = mod(x, y);
+    x = y; y = new;
+  }
+  return x;
 }
 
 int main(void) {
