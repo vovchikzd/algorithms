@@ -6,3 +6,7 @@
 	path = sha1
 	url = https://github.com/vovchikzd/sha1.git
 	branch = master
+[submodule "regexp"]
+	path = regexp
+	url = https://github.com/vovchikzd/regexp.git
+	branch = master
