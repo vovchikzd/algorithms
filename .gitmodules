@@ -2,3 +2,7 @@
 	path = external_sort
 	url = https://github.com/vovchikzd/yadro_task.git
 	branch = master
+[submodule "sha1"]
+	path = sha1
+	url = https://github.com/vovchikzd/sha1.git
+	branch = master
