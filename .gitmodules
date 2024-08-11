@@ -1,0 +1,3 @@
+[submodule "external_sort"]
+	path = external_sort
+	url = https://github.com/vovchikzd/yadro_task.git
